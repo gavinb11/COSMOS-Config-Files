@@ -1,0 +1,35 @@
+  APPEND_ID_ITEM PKTID 8 UINT 1 "Packet Type Identifier"
+  APPEND_ITEM PKTVN 8 UINT "Packet Version Number"
+  APPEND_ITEM GPSTIME 64 UINT "GPS Time Packet Was Made"
+  APPEND_ITEM GPSWEEK 16 UINT "GPS Week"
+  APPEND_ITEM XPOS 64 UINT "X Position"
+    UNITS kilometers KM
+  APPEND_ITEM YPOS 64 UINT "Y Position"
+    UNITS kilometers KM
+  APPEND_ITEM ZPOS 64 UINT "Z Position"
+    UNITS kilometers KM
+  APPEND_ITEM POSDOP 16 UINT "Position Dilution of Precision"
+  APPEND_ITEM XVEL 64 UINT "X Velocity"
+    UNITS kilometersperhour KMPH
+  APPEND_ITEM YVEL 64 UINT "Y Velocity"
+    UNITS kilometersperhour KMPH
+  APPEND_ITEM ZVEL 64 UINT "Z Velocity"
+    UNITS kilometersperhour KMPH
+  APPEND_ITEM LATDEG 32 INT "Latitude Degrees"
+    UNITS Degrees DEG
+  APPEND_ITEM LONGDEG 32 INT "Longitude Degrees"
+  UNITS Degrees DEG
+  APPEND_ITEM HORDOP 16 UINT "Horizontal Dilution of Precision"
+  APPEND_ITEM ALT 32 UINT "Altitude"
+    UNITS kilometers KM
+  APPEND_ITEM MAGX 16 UINT "Magnetometer X"
+  APPEND_ITEM MAGY 16 UINT "Magnetometer Y"
+  APPEND_ITEM MAGZ 16 UINT "Magnetometer Z"
+  APPEND_ITEM GYROX 16 UINT "Gyro X"
+  APPEND_ITEM GYROY 16 UINT "Gyro Y"
+  APPEND_ITEM GYROZ 16 UINT "Gyro Z"
+  APPEND_ITEM SUNSEN1 16 UINT "Sun Sensor 1"
+  APPEND_ITEM SUNSEN2 16 UINT "Sun Sensor 2"
+  APPEND_ITEM SUNSEN3 16 UINT "Sun Sensor 3"
+  APPEND_ITEM SUNSEN4 16 UINT "Sun Sensor 4"
+  APPEND_ITEM STRAINREAD 16 UINT "Strain Reading"

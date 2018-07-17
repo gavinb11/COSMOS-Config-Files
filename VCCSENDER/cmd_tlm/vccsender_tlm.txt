@@ -1,0 +1,17 @@
+TELEMETRY VCCSENDER SCIENCE BIG_ENDIAN "Telemetry Downlink Science Frame (up to 10 addresses)"
+  APPEND_ITEM ADDR_COUNT 8 UINT "Number of addresses"
+  MACRO_APPEND_START 1 10 "%s_%d"
+    APPEND_ITEM ADDR_CALL 48 STRING "Address Callsign"
+    APPEND_ITEM ADDR_SSID 8 STRING "Address SSID"
+  MACRO_APPEND_END
+  <%= render "_tlm_1_payload.txt" %>
+  <%= render "_addrformat_tlm.txt" %>
+
+TELEMETRY VCCSENDER HEALTH BIG_ENDIAN "Telemetry Downlink Health Frame (up to 10 addresses)"
+  APPEND_ITEM ADDR_COUNT 8 UINT "Number of addresses"
+  MACRO_APPEND_START 1 10 "%s_%d"
+    APPEND_ITEM ADDR_CALL 48 STRING "Address Callsign"
+    APPEND_ITEM ADDR_SSID 8 STRING "Address SSID"
+  MACRO_APPEND_END
+  <%= render "_tlm_2_payload.txt" %>
+  <%= render "_addrformat_tlm.txt" %>

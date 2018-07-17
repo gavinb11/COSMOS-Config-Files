@@ -1,0 +1,16 @@
+  ITEM DEST_ADDR 0 0 DERIVED "Destination address"
+    GENERIC_READ_CONVERSION_START STRING 64
+      if packet.read("ADDR_SSID_1") == "0"
+        sprintf("%6.6s", packet.read("ADDR_CALL_1"))
+      else
+        sprintf("%6.6s-%1.1s", packet.read("ADDR_CALL_1"), packet.read("ADDR_SSID_1"))
+      end
+    GENERIC_READ_CONVERSION_END
+  ITEM SRC_ADDR 0 0 DERIVED "Source address"
+    GENERIC_READ_CONVERSION_START STRING 64
+      if packet.read("ADDR_SSID_2") == "0"
+        sprintf("%6.6s", packet.read("ADDR_CALL_2"))
+      else
+        sprintf("%6.6s-%1.1s", packet.read("ADDR_CALL_2"), packet.read("ADDR_SSID_2"))
+      end
+    GENERIC_READ_CONVERSION_END
