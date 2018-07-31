@@ -1,0 +1,54 @@
+  APPEND_PARAMETER TC_PKT_MODE_EN_BIT_0 1 UINT 0 1 0 "Mode Enable/Disable: Bit 0 : Antenna Deployment Mode (State Byte == 0x01) 0 unless "
+    STATE COLLECTION_DISABLED 0
+    STATE COLLECTION_ENABLED 1
+    GENERIC_WRITE_CONVERSION_START
+      result = nil
+      case packet.given_values['TC_PKT_OPCODE']
+      when 'HK_CRIT'
+        result = value
+      when 'HK_EXT'
+        result = value
+      else
+        result = value * 0
+      end
+      return result
+    GENERIC_WRITE_CONVERSION_END
+  APPEND_PARAMETER TC_PKT_MODE_EN_BIT_1 1 UINT 0 1 0 "Mode Enable/Disable: Bit 1 : Safe Mode (State Byte == 0x02)"
+    STATE COLLECTION_DISABLED 0
+    STATE COLLECTION_ENABLED 1
+    GENERIC_WRITE_CONVERSION_START
+      result = nil
+      case packet.given_values['TC_PKT_OPCODE']
+      when 'HK_CRIT'
+        result = value
+      when 'HK_EXT'
+        result = value
+      else
+        result = value * 0
+      end
+      return result
+    GENERIC_WRITE_CONVERSION_END
+  APPEND_PARAMETER TC_PKT_MODE_EN_BIT_2 1 UINT 0 1 0 "Mode Enable/Disable: Bit 2 : Science Mode (State Byte == 0x04)"
+    STATE COLLECTION_DISABLED 0
+    STATE COLLECTION_ENABLED 1
+  APPEND_PARAMETER TC_PKT_MODE_EN_BIT_3 1 UINT 0 1 0 "Mode Enable/Disable: Bit 3 : Fault Mode (State Byte == 0x08)"
+    STATE COLLECTION_DISABLED 0
+    STATE COLLECTION_ENABLED 1
+    GENERIC_WRITE_CONVERSION_START
+      result = nil
+      case packet.given_values['TC_PKT_OPCODE']
+      when 'HK_CRIT'
+        result = value
+      when 'HK_EXT'
+        result = value
+      else
+        result = value * 0
+      end
+      return result
+    GENERIC_WRITE_CONVERSION_END
+  APPEND_PARAMETER TC_PKT_MODE_EN_BIT_4 1 UINT 0 0 0 "Mode Enable/Disable: Bit 4 : RESERVED, future use, defaults to 0"
+  APPEND_PARAMETER TC_PKT_MODE_EN_BIT_5 1 UINT 0 0 0 "Mode Enable/Disable: Bit 5 : RESERVED, future use, defaults to 0"
+  APPEND_PARAMETER TC_PKT_MODE_EN_BIT_6 1 UINT 0 0 0 "Mode Enable/Disable: Bit 6 : RESERVED, future use, defaults to 0"
+  APPEND_PARAMETER TC_PKT_MODE_EN_BIT_7 1 UINT 0 1 0 "Mode Enable/Disable: Bit 7 : Test Mode, only set by serial command.  Not a commandable state from ground."
+    STATE COLLECTION_DISABLED 0
+    STATE COLLECTION_ENABLED 1

@@ -1,0 +1,68 @@
+  APPEND_ITEM GPS_LSS_VIN 32 FLOAT "GPS Input Voltage"
+    UNITS Volts V
+  APPEND_ITEM GPS_LSS_1V2 32 FLOAT "GPS 1.2V Core Voltage"
+    UNITS Volts V
+  APPEND_ITEM GPS_LSS_3V3 32 FLOAT "GPS 3.3V Core Voltage"
+    UNITS Volts V
+  APPEND_ITEM GPS_LSS_IDRAW 32 FLOAT "GPS Current Draw"
+    UNITS milliamps mA
+  APPEND_ITEM GPS_LSS_TEMP 32 FLOAT "GPS Temperature"
+    UNITS Celsius C
+  APPEND_ITEM GPS_DATA_VALID 8 UINT "GPS DATA VALID?"
+  APPEND_ITEM GPS_LSP_TIME 64 FLOAT "GPS Time"
+    UNITS seconds sec
+  APPEND_ITEM GPS_LSP_WEEK 16 UINT "GPS Week"
+  APPEND_ITEM GPS_LSP_X 64 FLOAT "GPS X Position"
+    UNITS meters m
+  APPEND_ITEM GPS_LSP_Y 64 FLOAT "GPS Y Position"
+    UNITS meters m
+  APPEND_ITEM GPS_LSP_Z 64 FLOAT "GPS Z Position"
+    UNITS meters m
+  APPEND_ITEM GPS_LSP_SATS 8 UINT "GPS Num Sats"
+  APPEND_ITEM GPS_LSP_PDOP 32 FLOAT "GPS Position Dilution of Precision"
+    UNITS meters m
+  APPEND_ITEM GPS_LSP_XV 32 FLOAT "GPS X Velocity"
+    UNITS meterspersecond m/s
+  APPEND_ITEM GPS_LSP_YV 32 FLOAT "GPS Y Velocity"
+    UNITS meterspersecond m/s
+  APPEND_ITEM GPS_LSP_ZV 32 FLOAT "GPS Z Velocity"
+    UNITS meterspersecond m/s
+  APPEND_ITEM EPS_TLM_SOLAR_SDBCR1A 16 UINT "Sun Detector, Connector SA1A"
+    POLY_READ_CONVERSION 0 1.59725
+    UNITS Wattspermeterssq W/m2
+  APPEND_ITEM EPS_TLM_SOLAR_SDBCR1B 16 UINT "Sun Detector, Connector SA1B"
+    POLY_READ_CONVERSION 0 1.59725
+    UNITS Wattspermeterssq W/m2
+  APPEND_ITEM EPS_TLM_SOLAR_SDBCR2A 16 UINT "Sun Detector, Connector SA2A"
+    POLY_READ_CONVERSION 0 1.59725
+    UNITS Wattspermeterssq W/m2
+  APPEND_ITEM EPS_TLM_SOLAR_SDBCR2B 16 UINT "Sun Detector, Connector SA2B"
+    POLY_READ_CONVERSION 0 1.59725
+    UNITS Wattspermeterssq W/m2
+  APPEND_ITEM EPS_TLM_SOLAR_SDBCR3A 16 UINT "Sun Detector, Connector SA3A"
+    POLY_READ_CONVERSION 0 1.59725
+    UNITS Wattspermeterssq W/m2
+  APPEND_ITEM EPS_TLM_SOLAR_SDBCR3B 16 UINT "Sun Detector, Connector SA3B"
+    POLY_READ_CONVERSION 0 1.59725
+    UNITS Wattspermeterssq W/m2
+  APPEND_ITEM IMU_GYRO_X 32 FLOAT "Gyro X"
+    UNITS degreespersecond deg/s
+  APPEND_ITEM IMU_GYRO_Y 32 FLOAT "Gyro Y"
+    UNITS degreespersecond deg/s
+  APPEND_ITEM IMU_GYRO_Z 32 FLOAT "Gyro Z"
+    UNITS degreespersecond deg/s
+  APPEND_ITEM IMU_MAG_X 32 FLOAT "Magnetometer X"
+    UNITS microteslas uT
+  APPEND_ITEM IMU_MAG_Y 32 FLOAT "Magnetometer Y"
+    UNITS microteslas uT
+  APPEND_ITEM IMU_MAG_Z 32 FLOAT "Magnetometer Z"
+    UNITS microteslas uT
+  APPEND_ITEM IMU_ACC_X 32 FLOAT "Accelerometer X"
+    UNITS Gs G
+  APPEND_ITEM IMU_ACC_Y 32 FLOAT "Accelerometer Y"
+    UNITS Gs G
+  APPEND_ITEM IMU_ACC_Z 32 FLOAT "Accelerometer Z"
+    UNITS Gs G
+  APPEND_ITEM PANEL_STRAIN 16 UINT "Ultem Panel Strain"
+    UNITS degrees deg
+  APPEND_ITEM PANEL_TEMP 16 UINT "Ultem Panel Temperature"

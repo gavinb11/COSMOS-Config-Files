@@ -1,0 +1,43 @@
+TELEMETRY VCCSENDER HK_CRIT BIG_ENDIAN "Critical House Keeping"
+  <%= render "_tlm_addr_start.txt" %>
+  <%= render "_tlm_0x80_HK_CRIT__payload.txt" %>
+  <%= render "_tlm_addr_destsrc.txt" %>
+
+TELEMETRY VCCSENDER HK_CRIT_RT BIG_ENDIAN "Real Time Critical House Keeping"
+  <%= render "_tlm_addr_start.txt" %>
+  <%= render "_tlm_0x81_HK_CRIT_RT__payload.txt" %>
+  <%= render "_tlm_addr_destsrc.txt" %>
+
+TELEMETRY VCCSENDER HK_EXT BIG_ENDIAN "Extended House Keeping"
+  <%= render "_tlm_addr_start.txt" %>
+  <%= render "_tlm_HK_Header.txt", locals: {id: 0x82} %>
+  <%= render "_tlm_0x82_HK_EXT__payload.txt" %>
+  <%= render "_tlm_addr_destsrc.txt" %>
+
+TELEMETRY VCCSENDER HK_EXT_RT BIG_ENDIAN "Real Time Extended House Keeping"
+  <%= render "_tlm_addr_start.txt" %>
+  <%= render "_tlm_HK_Header.txt", locals: {id: 0x83} %>
+  <%= render "_tlm_0x83_HK_EXT_RT__payload.txt" %>
+  <%= render "_tlm_addr_destsrc.txt" %>
+
+TELEMETRY VCCSENDER SCIENCE BIG_ENDIAN "Science Data"
+  <%= render "_tlm_addr_start.txt" %>
+  <%= render "_tlm_HK_Header.txt", locals: {id: 0x84} %>
+  <%= render "_tlm_0x84_SCIENCE__payload.txt" %>
+  <%= render "_tlm_addr_destsrc.txt" %>
+
+TELEMETRY VCCSENDER CDH_STAT BIG_ENDIAN "CDH Status Dump"
+  <%= render "_tlm_addr_start.txt" %>
+  <%= render "_tlm_HK_Header.txt", locals: {id: 0x85} %>
+  <%= render "_tlm_addr_destsrc.txt" %>
+
+TELEMETRY VCCSENDER GPS_EXT BIG_ENDIAN "Extended GPS"
+  <%= render "_tlm_addr_start.txt" %>
+  <%= render "_tlm_HK_Header.txt", locals: {id: 0x86} %>
+  <%= render "_tlm_0x86_GPS_EXT__payload.txt" %>
+  <%= render "_tlm_addr_destsrc.txt" %>
+
+TELEMETRY VCCSENDER GPS_EXT_RT BIG_ENDIAN "Real Time GPS Extended"
+  <%= render "_tlm_addr_start.txt" %>
+  <%= render "_tlm_HK_Header.txt", locals: {id: 0x87} %>
+  <%= render "_tlm_addr_destsrc.txt" %>
