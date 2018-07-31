@@ -7,3 +7,5 @@ Includes AX25/KISS processing for incoming and outgoing packets.
 system.txt: C:\COSMOS\Demo\config\system  
 cmd_tlm_server.txt: C:\COSMOS\Demo\config\tools\cmd_tlm_server  
 VCCSENDER folder: C:\COSMOS\Demo\config\targets
+
+cmd_tlm folder in main is for real 7-23-18
